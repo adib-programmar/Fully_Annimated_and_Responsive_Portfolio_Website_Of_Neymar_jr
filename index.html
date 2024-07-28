@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neymar Jr.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/21ad1a0bda.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="js/script.js"></script>
+    <link href="https://db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended+Bold"
+        rel="stylesheet">
+    <link rel="shortcut icon"
+        href="https://images.ctfassets.net/3mv54pzvptwz/6ZOVUW3paI1ehJzoBGjd9z/4d3446701341e82e9879f98f9aacedc9/njr_preto_2.png"
+        type="image/x-icon">
+    <script src="js/router.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="main">
+        <video autoplay muted loop id="bg-video">
+            <source src="bg-video/neybar-bg.mp4" type="video/mp4">
+
+        </video>
+
+        <div id="header">
+            <div id="header_1st_part">
+                <h3 onclick="window.location.reload()">Neymar Jr <span
+                        style="color: aquamarine; font-size: 20px; ;">.</span></h3>
+            </div>
+
+
+            <div id="header_2nd_part">
+                <ul>
+                    <a href="#main">
+                        <li>Home</li>
+                    </a>
+                    <a href="#about">
+                        <li>About</li>
+                    </a>
+                    <a href="#club">
+                        <li>Clubs</li>
+                    </a>
+                    <a href="#contact">
+                        <li>contact</li>
+                    </a>
+                </ul>
+            </div>
+            <div id="header_3rd_part">
+                <a href="https://www.youtube.com/results?search_query=neymarjr" target="_blank">
+                    <button class="border-buttons" data-aos="zoom-in"><i class="ri-tv-line"></i> Watch</button>
+                </a>
+
+                <div class="toggle-button"><i class="fa-solid fa-bars-staggered"></i></div>
+            </div>
+        </div>
+
+        <div id="contents">
+            <div id="left-content">
+                <h2 data-aos="fade-down-right">Hello, I'am <span id="name">Neymar Jr.</span> </h2>
+                <p data-aos="fade-down-right"><mark>Lorem</mark> ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sint recusandae nulla iusto debitis ullam quisquam fugit eveniet non tempore? </p>
+                <br>
+                <button class="border-buttons" data-aos="fade-down-right">Learn More <i
+                        class="ri-indent-decrease"></i></button>
+            </div>
+            <div id="right-content">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- dropdown -->
+    <div class="dropdown-menu">
+        <a href="#main">
+            <li>Home</li>
+        </a>
+        <hr color="#ddd" width="100%" height="1px">
+        <a href="#about">
+            <li>About</li>
+        </a>
+        <hr color="#ddd" width="100%" height="1px">
+        <a href="#club">
+            <li>Clubs</li>
+        </a>
+        <hr color="#ddd" width="100%" height="1px">
+        <a href="#contact">
+            <li>contact</li>
+        </a>
+        <hr color="#ddd" width="100%" height="1px">
+        <li><a href="https://www.youtube.com/results?search_query=neymarjr" target="_blank">
+                <button class="border-buttons" data-aos="zoom-in"><i class="ri-tv-line"></i> Watch</button>
+            </a></li>
+    </div>
+
+    <!-- about  -->
+    <section id="about">
+        <div id="img-left">
+            <img src="images/neymar.jpg" id="about-img" alt="" data-aos="fade-down-right">
+        </div>
+        <div id="about-contents">
+            <h1 data-aos="zoom-in-left">About Me</h1><br>
+            <p data-aos="zoom-in-left"><b><mark>I</mark> am more than just a footballer.</b> The world sees the goals,
+                the tricks, the celebrations. But behind the glitz and glamour is a relentless drive for perfection. The
+                pressure to perform is immense. Every touch is analyzed, every mistake magnified. Injuries have tested
+                my spirit, but they've also made me stronger. I'm a son, a friend, a dreamer. Football is my passion,
+                but it's not all of me.</p>
+        </div>
+    </section>
+
+    <section id="marquee-section">
+
+        <marquee behavior="" direction="left" scrollamount="30">As long as there is a 1% chance, we will have 99%
+            faith.</marquee>
+    </section>
+
+    <section id="club">
+        <div id="heading" data-aos="fade-right">
+            <br>
+            <h1>My clubs</h1>
+        </div>
+
+        <div id="club-cards" data-aos="zoom-in-right">
+
+            <div class="club" onclick="window.location.href = '/santos/santos.html'">
+                <h2>Santo s Fc</h2>
+                <img src="clubs/santos.png" alt="" class="clubs-img">
+            </div>
+
+            <div class="club" onclick="window.location.href = '/barcalona/barcalona.html'">
+                <h2>Fc Barcalona</h2>
+                <img src="clubs/fcb.png" alt="" class="clubs-img">
+            </div>
+            <div class="club" onclick="window.location.href = '/psg/psg.html'">
+                <h2>PSG </h2>
+                <img src="clubs/psg.png" alt="" class="clubs-img">
+
+            </div>
+            <div class="club" onclick="window.location.href = '/alhilal/alhilal.html'">
+                <h2>Al Hilal (Current)</h2>
+                <img src="clubs/alhilal.png" alt="" class="clubs-img">
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container" data-aos="zoom-in-right">
+            <div class="contact-form">
+                <h2>Get in touch</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="0eda9822-d75e-46a0-9dda-b0d78527ad7b">
+                    <input type="hidden" name="from_name" value="SRMS">
+
+                    <input type="text" placeholder="Your Name" required name="name" spellcheck="true">
+                    <input type="email" placeholder="Your Email" required name="email">
+                    <textarea placeholder="Your Message" required name="message"></textarea>
+                    <button type="submit">Submit <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div id="part-1" data-aos="fade-left">
+            <h1>Neymar Jr.</h1>
+            <p>This is my official website which is made by <mark>Adib.</mark> I am very happy to get this website.</p>
+
+        </div>
+        <div id="part-2" data-aos="fade-up">
+            <h2>Quick links</h2>
+            <ul>
+                <a href="#main">
+                    <li>Home</li>
+                </a>
+                <a href="#about">
+                    <li>About</li>
+                </a>
+                <a href="#contact">
+                    <li>Contact</li>
+                </a>
+                <a href="#club">
+                    <li>Clubs</li>
+                </a>
+            </ul>
+        </div>
+        <div id="part-3" onclick=" window.open('https://facebook.com/adib950363');" style="cursor: pointer;">
+            <h3>Made by </h3>
+            <h5> <mark>Adib</mark> Ahnaf Azad </h5>
+            <br>
+            <a href="#"><button class="border-buttons">Back to top</button></a>
+
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+        })
+
+    </script>
+
+
+</body>
+
+</html>

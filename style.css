@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Balsamiq Sans;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+#header {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    height: 80px;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+#header_2nd_part ul {
+    display: flex;
+    gap: 20px;
+    transition: max-height 0.3s ease-out;
+}
+
+#header_2nd_part ul li {
+    list-style: none;
+    font-family: "Monument Extended Bold";
+    color: yellow;
+    transition: all ease 0.5s;
+
+}
+
+#header_2nd_part ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+#header_2nd_part ul li:hover {
+    color: crimson;
+}
+
+.border-buttons {
+    padding: 7px 14px;
+    border-radius: 20px;
+    background-color: #000000;
+    color: white;
+    font-family: Balsamiq Sans;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all ease 0.1s;
+}
+
+.border-buttons:hover {
+    background-color: transparent;
+    border: 5px solid #fff;
+    color: #fff;
+    transform: scale(0.96);
+    padding: 6px 12px;
+}
+
+#header_1st_part h3 {
+    font-family: Balsamiq Sans;
+    cursor: pointer;
+}
+
+#contents {
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    padding: 0px 30px;
+    margin-top: 120px;
+    justify-content: space-between;
+}
+
+#left-content {
+    width: 55%;
+}
+
+#left-content h2 {
+    font-size: 50px;
+    color: white;
+}
+
+#name {
+    color: coral;
+}
+
+#left-content p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+    background-color: rgb(140, 173, 20);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#right-content {
+    width: 0;
+}
+
+/* Styles for the menu icon */
+#menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.toggle-button {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown-menu {
+    position: relative;
+    overflow: hidden;
+    padding: 0px 15px;
+    z-index: 1;
+    display: none;
+    bottom: 750px;
+    font-family: "Monument Extended Bold";
+    width: 100%;
+    background-color: #00000038;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+
+    height: 0;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+
+
+.dropdown-menu li {
+    list-style: none;
+    padding: 0.7rem;
+    font-family: "Monument Extended Bold";
+    display: flex;
+    align-items: baseline;
+
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: orangered;
+    transition: all ease 0.5s;
+    font-weight: 800;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Monument Extended Bold";
+
+}
+
+.dropdown-menu.open {
+    height: 300px;
+}
+
+/* for texts content  */
+@media (max-width: 509px) {
+
+
+    #left-content h2 {
+        font-size: 35px;
+    }
+
+    #left-content p {
+        font-size: 20px;
+    }
+
+    .border-buttons {
+        padding: 5px 10px;
+        font-size: 17px;
+    }
+
+    .border-buttons {
+        padding: 12px 30px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* responsive for navbar in smaller devices ,, */
+@media(max-width: 680px) {
+
+    #header_2nd_part ul,
+    #header_3rd_part button {
+        display: none;
+    }
+
+
+    #left-content {
+        width: 300px;
+    }
+
+    .toggle-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    i {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+}
+
+
+@media (max-width: 440px) {
+    .dropdown-menu {
+        width: unset;
+        left: 10px;
+    }
+}
+
+/* about starts  */
+/* about starts */
+#about-img {
+    width: 45%;
+    margin-left: 120px;
+    margin-bottom: 50px;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+
+#about-img:hover {
+    transform: rotate(20deg);
+}
+
+#about {
+    width: 100%;
+    height: 100%;
+    background-color: #0C0C0C;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+#about-contents {
+    width: 50%;
+    margin-top: -150px;
+    margin-right: 50px;
+}
+
+#about-contents h1 {
+    color: #76ABAE;
+    font-size: 40px;
+}
+
+#about-contents p {
+    color: #EEEEEE;
+    font-family: Hind siliguri;
+    line-height: 21px;
+    font-size: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #about-img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    #about-contents {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    #about-contents h1 {
+        font-size: 32px;
+    }
+
+    #about-contents p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #about-img {
+        height: 250px;
+    }
+
+    #about-contents h1 {
+        font-size: 28px;
+    }
+
+    #about-contents p {
+        font-size: 16px;
+    }
+}
+
+/* Base styles (for larger screens) */
+#club {
+    height: 100%;
+    width: 100%;
+    background-color: #007bff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#club h1 {
+    color: chocolate;
+    font-size: 60px;
+    font-weight: 900;
+    border-bottom: 2px dashed #fff;
+}
+
+#club-cards {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping of cards */
+    justify-content: center;
+    /* Center the content */
+}
+
+.club {
+    height: 190px;
+    width: 250px;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    text-align: center;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    overflow-x: hidden;
+}
+
+.club:hover {
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: #7137ce;
+    color: whitesmoke;
+    transform: scale(1.1);
+}
+
+.club h2 {
+    margin-top: 10px;
+    border-bottom: 1px dashed #202124;
+}
+
+.clubs-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    #club h1 {
+        font-size: 40px;
+    }
+
+    #club-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* Allow cards to wrap */
+        justify-content: space-around;
+    }
+
+    .club {
+        width: 45%;
+        /* Adjust width to fit two columns */
+        margin: 10px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #club h1 {
+        font-size: 30px;
+    }
+
+    #club-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* Allow cards to wrap */
+        justify-content: space-around;
+    }
+
+    .club {
+        width: 45%;
+        /* Two columns */
+        margin: 5px;
+    }
+
+    .clubs-img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* contact form starts  */
+/* CSS for Contact Section */
+
+#contact {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /* Center the container */
+    align-items: center;
+    background-image: url('images/image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-container {
+    max-width: 500px;
+    /* Restrict max width */
+    width: 100%;
+    /* Full width */
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    /* Center the text and form elements */
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.6px);
+    -webkit-backdrop-filter: blur(1.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-form {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    color: #ffcc00;
+    /* Yellow text */
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffcc00;
+    /* Yellow border */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    font-size: 16px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.36);
+    outline: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-form textarea {
+    font-size: 16px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 120px;
+    resize: vertical;
+
+}
+
+.contact-form button {
+    background-color: #000;
+    /* Yellow background */
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e6b800;
+    /* Darker yellow on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 22px;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form h2 {
+        font-size: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+/* marquee  */
+#marquee-section {
+    width: 100%;
+    height: 150px;
+    background-color: #eed441;
+}
+
+marquee {
+    font-size: 120px;
+    font-family: bebas;
+}
+
+/* scrollbar  */
+
+::-webkit-scrollbar {
+    background-color: #ddd;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    height: 60px;
+    border-radius: 15px;
+}
+
+
+/* footer  */
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    overflow-y: hidden;
+}
+
+#part-1 {
+    width: 25%;
+}
+
+#part-1 h1 {
+    font-size: 50px;
+    color: chocolate;
+
+}
+
+#part-1 p {
+    color: whitesmoke;
+    font-size: 17px;
+    font-family: 'arial', sans-serif;
+    line-height: 19px;
+    font-weight: normal;
+}
+
+#part-2 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 130px;
+}
+
+#part-2 h2 {
+    font-size: 30px;
+    color: crimson;
+}
+
+
+#part-2 li {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+#part-3 {
+    width: 35%;
+    margin-left: 50px;
+}
+
+#part-3 h3 {
+    font-size: 29px;
+    color: #007bff;
+}
+
+#part-3 h5 {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Responsive CSS for mobile and tablet */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        padding: 20px;
+        /* Adjust padding for smaller screens */
+    }
+
+    #part-1,
+    #part-2,
+    #part-3 {
+        width: 100%;
+        /* Make each part full width */
+        margin: 10px 0;
+        /* Add spacing between parts */
+        text-align: center;
+        /* Center content */
+    }
+
+    #part-1 h1 {
+        font-size: 36px;
+        /* Reduce heading size */
+    }
+
+    #part-1 p {
+        font-size: 16px;
+    }
+
+    #part-2 h2 {
+        font-size: 24px;
+    }
+
+    #part-3 h3,
+    #part-3 h5 {
+        font-size: 20px;
+    }
+
+    #part-2 ul {
+        flex-direction: column;
+        /* Stack list items vertically */
+    }
+}
