@@ -25,7 +25,7 @@ This is a fully animated and responsive portfolio website dedicated to Neymar Jr
 ## Demo
 You can explore this website.
 
-https://adib-programmar.github.io/Full-Annimated-Protfolio-page-of-Neymar-Jr---Responsive/
+https://neymar-junior.netlify.app/
 ## Run Locally
 
 Clone the project
